@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopt a Pet - Form</title>
+</head>
+<body>
+    <h1>Adopt a Pet - Adoption Inquiry Form</h1>
+    <p>Thank you for your interest in adopting a pet! Please fill out the form below to help us better understand your needs and preferences. Our adoption team will review your submission and get back to you soon!</p>
+
+    <h2>Adoption Inquiry Form</h2>
+    <form action="submit_adoption_form.php" method="POST">
+        <label for="name">Your Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Your Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Your Phone Number (optional):</label><br>
+        <input type="tel" id="phone" name="phone"><br><br>
+
+        <label for="pet">Which pet are you interested in?</label><br>
+        <input type="text" id="pet" name="pet"><br><br>
+
+        <label for="message">Why do you want to adopt this pet?</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" placeholder="Please share why you're interested in adopting this pet..."></textarea><br><br>
+
+        <p>Do you agree to a home visit as part of the adoption process?</p>
+        <input type="radio" id="homecheckyes" name="homecheck" value="Yes" required>
+        <label for="homecheckyes">Yes</label>
+        <input type="radio" id="homecheckno" name="homecheck" value="No">
+        <label for="homecheckno">No</label><br><br>
+
+        <label for="adopt-date">When are you looking to adopt?</label><br>
+        <input type="date" id="adopt-date" name="adopt-date"><br><br>
+
+        <button type="submit">Submit Inquiry</button>
+        <a href="adopt.html">Back</a>
+    </form>
+
+    <p>If you have any questions, feel free to reach out to us at <a href="mailto:adopthamropet@gmail.com">adopthamropet@gmail.com</a>.</p>
+</body>
+</html>
